@@ -37,15 +37,20 @@ const styles = StyleSheet.create({
     },
     locationInfo: {
         flexDirection: 'column'
-
     },
     difference: {
         fontSize: 15,
-        color: "#333a40ff"
+        color: "#333a40ff",
+        position: 'absolute',
+        
+        
     },
     locationName: {
         color: '#fff',
         fontSize: 25,
+        position: 'absolute',
+        bottom: 10,
+        left: 5,
     },
     timeBox: {
         flexDirection: 'row',

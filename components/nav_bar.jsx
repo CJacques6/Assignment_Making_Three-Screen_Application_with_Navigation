@@ -6,8 +6,8 @@ const nav_bar = () => {
     const router = useRouter();
 
   return (
-    <View style>
-      
+    <View style = {styles.navbar}>
+      <Text>World Clock</Text>
     </View>
   )
 }
