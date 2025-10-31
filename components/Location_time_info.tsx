@@ -41,9 +41,10 @@ const styles = StyleSheet.create({
     difference: {
         fontSize: 15,
         color: "#333a40ff",
+        width:100,
         position: 'absolute',
-        
-        
+        top: 10,
+        left: 5,        
     },
     locationName: {
         color: '#fff',

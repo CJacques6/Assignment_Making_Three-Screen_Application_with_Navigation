@@ -1,11 +1,9 @@
-import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
-import { useRouter } from "expo-router";
-import World_Clock_Top_Bar from "@/components/World_Clock_Top_Bar";
 import LocationTimeInfo from "@/components/Location_time_info";
+import World_Clock_Top_Bar from "@/components/World_Clock_Top_Bar";
+import { StyleSheet, View } from "react-native";
+import NavBar from "@/components/nav_bar";
 
 export default function Index() {
-
-  const router = useRouter();
 
   return (
     <View
@@ -17,6 +15,7 @@ export default function Index() {
       <LocationTimeInfo locationName='Calgary' timeDiff='Today, +0HRS' time='5:55' dayPart='PM'/>
       <LocationTimeInfo locationName='UTC' timeDiff='Today, +6HRS' time='11:55' dayPart='PM'/>
       <LocationTimeInfo locationName='Halifax' timeDiff='Today, +3HRs' time='8:55' dayPart='PM'/>
+      <NavBar screen='clock' />
     </View>
   );
 }
