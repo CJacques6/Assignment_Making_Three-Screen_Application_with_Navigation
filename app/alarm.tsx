@@ -1,14 +1,14 @@
-import { Ionicons } from '@expo/vector-icons';
 import React, { useState } from 'react';
 import {
-  FlatList,
-  Pressable,
-  SafeAreaView,
-  StyleSheet,
-  Switch,
-  Text,
   View,
+  Text,
+  StyleSheet,
+  FlatList,
+  SafeAreaView,
+  Switch,
+  Pressable,
 } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 
 type Alarm = {
   id: string;
