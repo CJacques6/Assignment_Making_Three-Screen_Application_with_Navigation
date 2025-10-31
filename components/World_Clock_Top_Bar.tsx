@@ -1,5 +1,5 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { StyleSheet, Text, View } from 'react-native'
 
 const World_Clock_Top_Bar = () => {
   return (
@@ -8,7 +8,7 @@ const World_Clock_Top_Bar = () => {
         <Text style={styles.edit}>Edit</Text>
         <Text style={styles.plus}>+</Text>
       </View>
-      <Text>World Clock</Text>
+      <Text style= {styles.title}>World Clock</Text>
     </View>
   )
 }
@@ -18,21 +18,33 @@ export default World_Clock_Top_Bar
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
         padding: 3,
+        maxHeight: 100,
     },
     topBar: {
         flex: 1,
-        justifyContent: "center",
-        flexDirection: "column",
-        color: '#f39c12',
+        justifyContent: 'space-between',
+        flexDirection: "row",
+        position: 'relative',
+        top: 5
     },
     edit: {
         textAlign:'left',
+        color: '#ffa500',
+        padding: 5,
+        fontSize: 20,
     },
     plus: {
         textAlign: "right",
+        color: '#ffa500',
+        padding: 5,
+        fontSize: 30,
+    },
+    title: {
+        color: "#fff",
+        fontSize: 32,
+        textAlign: 'left',
+        padding: 5,
     }
 })
 
