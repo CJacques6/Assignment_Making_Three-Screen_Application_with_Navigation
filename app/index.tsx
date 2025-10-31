@@ -1,15 +1,25 @@
-import { Text, View } from "react-native";
+import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
+import { useRouter } from "expo-router";
+import World_Clock_Top_Bar from "@/components/World_Clock_Top_Bar";
 
 export default function Index() {
+
+  const router = useRouter();
+
   return (
     <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
+      style={styles.container}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <World_Clock_Top_Bar/>
+      
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+  },
+})
